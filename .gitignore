@@ -221,3 +221,69 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# ==========================================
+# FINGUARD - DATA ENGINEERING PROJECT
+# ==========================================
+
+# Raw datasets - stored locally / MinIO / S3
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed datasets and generated outputs
+data/processed/
+data/interim/
+data/external/
+
+# Python environments
+.python-version
+.pytest_cache/
+
+# Jupyter generated files
+.ipynb_checkpoints/
+
+# Airflow
+airflow/logs/
+airflow.cfg
+airflow.db/
+logs/
+
+# dbt
+target/
+dbt_packages/
+dbt_modules/
+logs/dbt.log
+*.manifest.json
+
+# Apache Spark
+spark-warehouse/
+metastore_db/
+derby.log/
+checkpoints/
+
+# Databricks local credentials
+.databrickscfg
+
+# AWS credentials
+.aws/credentials
+
+# Docker local persistent volumes
+postgres_data/
+minio_data/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Terraform state (future AWS deployment)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
